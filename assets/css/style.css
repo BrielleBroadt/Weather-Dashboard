@@ -1,0 +1,7 @@
+.Background{
+    height: 150px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("/assets/images/Weather.jpg");
+    background-position: center;
+}
