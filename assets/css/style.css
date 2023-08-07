@@ -1,7 +1,25 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 .Background{
-    height: 150px;
+    height: 100px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("/assets/images/Weather.jpg");
     background-position: center;
+    color:rgb(20, 188, 239);
+    text-align:left;
+    padding: 50px;
+    font-size: 35px;
+    text-shadow: 0 0 15px #020eed;
 }
+#button {
+    background-color: #6394f7;
+    color: #FFFFFF;
+    width: 20%;
+
+  }
+  #button-hover {
+background-color: #ffe60a;
+  }
