@@ -16,9 +16,9 @@
 
 ## Description
 Developer created Weather Dashboard with  no starter code, continuing learning in CSS, HTML and Javascript.
-* 
-* 
-* 
+* Developer created divs in HTML and semantic HTML elements 
+* CSS was utlized for styling and flex box properties
+* Javascript was utlized using the fetch requests to call weather
 *
 
 ## Instalation
