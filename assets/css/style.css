@@ -1,5 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #fdf5dd;
 }
 
 .Background{
@@ -13,13 +14,46 @@ body {
     padding: 50px;
     font-size: 35px;
     text-shadow: 0 0 15px #020eed;
+  
 }
 #button {
-    background-color: #6394f7;
-    color: #FFFFFF;
+    background-color: #acdffa;
+    color: #0468fe;
     width: 20%;
+  }
 
+#main-weather-section {
+  flex: 1 0 200px;
+  padding: 20px;
+  text-align: center;
+  display: table-row;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #ffa496;
+}
+
+.section {
+    flex: 1 0 200px;
+  padding: 20px;
+  text-align: center;
+  display: table-row;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #ffa496;
+
+}
+
+#five-day-forecast {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 992px) {
+  .card {
+    width: 50%;}
   }
-  #button-hover {
-background-color: #ffe60a;
-  }
+  @media screen and (max-width: 768px) {
+      .card {
+        width: 100%;}
+      }
