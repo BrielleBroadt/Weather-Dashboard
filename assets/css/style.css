@@ -23,12 +23,17 @@ body {
   }
 
 #main-weather-section {
-  flex: 1 0 200px;
-  padding: 20px;
-  text-align: center;
-  display: table-row;
-  border-style: solid;
-  border-width: 1px;
+  display: flex;
+  flex-direction: row;
+  /* Centers along the main axis determined by flex-direction */
+  justify-content: center;
+  /* Centers along the opposite axis */
+  align-items:
+  width: 90%;
+  /* Uses the height of the viewport */
+  
+  margin: 0 auto;
+  border-width: 2px;
   background-color: #ffa496;
 }
 

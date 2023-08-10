@@ -1,9 +1,11 @@
+// all variables
 const apiKey = "d8353870936052dfa58ed91753ac2e4b"
 var inputBox = document.querySelector("#msg")
 var searchButton = document.querySelector("#button")
 var mainWeather = document.querySelector("#main-weather-section")
 var fiveDay = document.querySelector("#five-day-forecast")
 
+// calling weather, using functions to return reponse of specified code for single day forecast
 function searchWorks(cityName) {
     fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=imperial&appid=${apiKey}`
@@ -30,6 +32,9 @@ function searchWorks(cityName) {
         fiveDayForecast(lat, lon)
     })
 }
+
+// calling weather, using functions to return reponse of specified code for five day forecast
+
 function fiveDayForecast(lat, lon) {
     fetch(`https://api.openweathermap.org/data/2.5/forecast/?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`)
         .then((response) => {
@@ -37,6 +42,7 @@ function fiveDayForecast(lat, lon) {
         })
         .then((data) => {
             console.log(data);
+
             for (var i = 1; i <= 33; i += 8) {
                 console.log("Temp:",data.list[i].main.temp);
                 console.log("Humidity:",data.list[i].main.humidity);
@@ -48,6 +54,7 @@ function fiveDayForecast(lat, lon) {
         });
 }
 
+// 
 searchButton.addEventListener("click", function (event) {
     event.preventDefault()
     var cityName = inputBox.value.trim()
