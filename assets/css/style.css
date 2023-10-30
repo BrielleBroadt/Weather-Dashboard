@@ -21,39 +21,53 @@ body {
     color: #0468fe;
     width: 20%;
   }
+  .top {
+    display: flex;
+  }
 
 #main-weather-section {
   display: flex;
-  flex-direction: row;
+  flex-direction:column;
   /* Centers along the main axis determined by flex-direction */
   justify-content: center;
   /* Centers along the opposite axis */
-  align-items:
-  width: 90%;
+  align-items:center;
+  width: 60rem;
   /* Uses the height of the viewport */
   
   margin: 0 auto;
   border-width: 2px;
-  background-color: #ffa496;
+ 
 }
 
 .section {
-    flex: 1 0 200px;
   padding: 20px;
   text-align: center;
   display: table-row;
   border-style: solid;
   border-width: 1px;
   background-color: #ffa496;
+  width: 40rem;
 
 }
 
 #five-day-forecast {
   display:flex;
   flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items:center;
+  padding-top: 3rem;
 }
 
-
+.weatherCard {
+  display: flex;
+  flex-direction: column ;
+gap: 1rem;
+border-radius: 5px;
+box-shadow: 4px 4px 8px rgba(0 , 0, 0, 0.6);
+padding: 1rem;
+}
 @media screen and (max-width: 992px) {
   .card {
     width: 50%;}
